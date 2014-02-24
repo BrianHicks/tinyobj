@@ -7,7 +7,7 @@ build:
     # A step that executes `pip install` command
     - pip-install:
         requirements_file: requirements.txt
-        packages_list: "tox flake8"
+        packages_list: "pytest flake8"
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
