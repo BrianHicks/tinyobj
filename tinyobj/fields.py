@@ -80,3 +80,15 @@ class NoValidationField(Field):
     """
     def initialize(self, value=None):
         return value
+
+
+class DefaultField(Field):
+    """\
+    a field which sets a default but allows anything else
+    """
+    def __init__(self, default):
+        self.default = default
+
+    def initialize(self, value=None):
+        return value if value is not None else self.default
+

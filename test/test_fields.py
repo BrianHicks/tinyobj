@@ -69,6 +69,18 @@ class TestTextField(object):
         assert ins.clean("asdf") == _compat.text_type("asdf")
 
 
+class TestDefaultField(object):
+    def test_none(self):
+        ins = fields.DefaultField('asdf')
+
+        assert ins.initialize() == ins.default
+
+    def test_something(self):
+        ins = fields.DefaultField('asdf')
+
+        assert ins.initialize('passthrough') == 'passthrough'
+
+
 @pytest.mark.parametrize("value", [
     -1, 0, 1, 1.0,            # numeric
     True, False,              # boolean

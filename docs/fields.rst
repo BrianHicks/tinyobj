@@ -19,4 +19,4 @@ Subclasses
 ----------
 
 .. automodule:: tinyobj.fields
-   :members: NumberField, BoolField, TextField, NoValidationField
+   :members: NumberField, BoolField, TextField, NoValidationField, DefaultField
