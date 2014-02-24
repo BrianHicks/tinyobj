@@ -24,4 +24,4 @@ If you have any suggestions or questions about **tinyobj** feel free to email me
 at brian@brianthicks.com.
 
 If you encounter any errors or problems with **tinyobj**, please let me know!
-Open an Issue at the GitHub http://github.com/BrianHicks/tinyobj main repository.
+Open an Issue at the GitHub https://github.com/BrianHicks/tinyobj main repository.
