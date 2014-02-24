@@ -91,4 +91,3 @@ class DefaultField(Field):
 
     def initialize(self, value=None):
         return value if value is not None else self.default
-
