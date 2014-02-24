@@ -4,7 +4,9 @@ box: wercker/python
 build:
   # The steps that will be executed on build
   steps:
-    # A step that executes `pip install` command
+    - virtualenv:
+        name: setup virtual environment
+
     - pip-install:
         requirements_file: requirements.txt
         packages_list: pytest flake8
