@@ -70,11 +70,11 @@ class TestTextField(object):
 
 
 @pytest.mark.parametrize("value", [
-    -1, 0, 1, 1.0,       # numeric
-    True, False,         # boolean
-    "a",                 # string
-    [], {}, set(),       # container
-    type("a", [], {})(), # class instances
+    -1, 0, 1, 1.0,            # numeric
+    True, False,              # boolean
+    "a",                      # string
+    [], {}, set(),            # container
+    type("a", tuple(), {})(), # class instances
 ])
 def test_no_validation(value):
     ins = fields.NoValidationField()

@@ -8,6 +8,7 @@ build:
         name: setup virtual environment
 
     - pip-install:
+        name: install main requirements
         requirements_file: requirements.txt
 
     - pip-install:
