@@ -9,7 +9,10 @@ build:
 
     - pip-install:
         requirements_file: requirements.txt
-        packages_list: pytest flake8
+
+    - pip-install:
+        name: install development requirements
+        requirements_file: requirements_dev.txt
 
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
