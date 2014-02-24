@@ -13,6 +13,7 @@ Contents:
 
    installation
    usage
+   fields
    contributing
    authors
    history
