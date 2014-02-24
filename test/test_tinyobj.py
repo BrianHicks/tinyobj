@@ -2,7 +2,6 @@
 Tests for `tinyobj` module.
 """
 import pytest
-from tinyobj import tinyobj
 
 
 class TestTinyobj(object):
